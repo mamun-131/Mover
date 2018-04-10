@@ -12,7 +12,9 @@ import { CustomerViewComponent } from './customer/customer-view/customer-view.co
 import { HttpModule } from '@angular/http';
 import { PostsubmissionComponent } from './customer/postsubmission/postsubmission.component';
 import { DataserviceService } from './dataservice.service';
-
+import { AgmCoreModule } from '@agm/core';
+import { MapComponent } from './map/map.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -23,15 +25,21 @@ import { DataserviceService } from './dataservice.service';
     BillEntryFormComponent,
     OrderEntryFormComponent,
     CustomerViewComponent,
-    PostsubmissionComponent
+    PostsubmissionComponent,
+    MapComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     routing,
-    HttpModule
-    
+    HttpModule,
+    AgmCoreModule.forRoot({
+      // please get your own API key here:
+      // https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en
+      apiKey: 'AIzaSyD03BuTFrir2dCNkn4U-_k8C8pr7QJxvUc'
+    })
   ],
   providers: [DataserviceService],
   bootstrap: [AppComponent]

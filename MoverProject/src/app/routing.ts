@@ -6,6 +6,8 @@ import { BillEntryFormComponent } from './customer/bill-entry-form/bill-entry-fo
 import { OrderEntryFormComponent } from './customer/order-entry-form/order-entry-form.component';
 import { CustomerViewComponent } from './customer/customer-view/customer-view.component';
 import { PostsubmissionComponent } from './customer/postsubmission/postsubmission.component';
+import { MapComponent } from './map/map.component';
+import { AboutComponent } from './about/about.component';
 const appRoutes: Routes = [
   { 
     path: 'home', 
@@ -30,6 +32,14 @@ const appRoutes: Routes = [
   { 
     path: 'postsubmission', 
     component: PostsubmissionComponent
+  },
+  { 
+    path: 'map', 
+    component: MapComponent
+  },
+  { 
+    path: 'about', 
+    component: AboutComponent
   },
   {
     path: '', 

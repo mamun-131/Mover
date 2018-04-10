@@ -1,4 +1,17 @@
-body {
+agm-map {
+    height: 450px;
+  }
+  
+  
+  * {
+    font-family: Lato;
+  }
+  
+  a {
+    color: darkblue;
+  }
+
+  body {
 
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   }
@@ -177,8 +190,29 @@ body {
     padding-right: 30px;
     background-color: rgb(150, 153, 204);
     font-family: Tahoma;
-    background: -webkit-gradient(linear, right top, left top, color-stop(0%,lightseagreen), color-stop(100%,lightgray));
-    background: linear-gradient(to left,lightseagreen,  lightgray);
+    background: -webkit-gradient(linear, right top, left top, color-stop(0%,lightseagreen), color-stop(100%,lightblue));
+    background: linear-gradient(to left,lightseagreen,  lightblue);
+    border-radius: 20px;
+    overflow: hidden;
+     opacity: 0.*7;
+    filter: alpha(opacity=70);
+    
+    color:  black;
+
+  }
+  .containerDecoration3{
+    margin-left: 2px;
+    float: left;
+    width: 98%;
+    height:88%;
+    padding-top:10px;
+    padding-left: 30px;
+    padding-bottom: 10px; 
+    padding-right: 30px;
+    background-color: rgb(150, 153, 204);
+    font-family: Tahoma;
+    background: -webkit-gradient(linear, right top, left top, color-stop(0%,lightcoral), color-stop(100%,lightsalmon));
+    background: linear-gradient(to left,lightcoral,  lightsalmon);
     border-radius: 20px;
     overflow: hidden;
      opacity: 0.*7;
